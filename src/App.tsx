@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className ="Login">
     <div className = 'LoginBox'>
+      <div className = "appLogo">
+        <img src= "./images/logotrans.png" alt="Logo"/>
+        </div>
     <div className = 'LoginHeader'>Login </div>
       <div className = "inputs">
-        <input className = "email" placeholder = "Enter your email"/>
+        <input className = "email" placeholder = "Email"/>
         <input 
         className = "password" 
-        placeholder = "Enter your password"
+        placeholder = "Password"
         type = "password"
         />
       </div>
-      {/* <div style ={{display: "flex", justifyContent: "center", color: 'black'}}> */}
+      <div style ={{display: "flex", justifyContent: "center", color: 'black'}}>
         <button className = "submitbutton">Login</button>
-      </div>
+        <button className = "signupbutton">Sign Up</button>
+      
     </div>
-    // </div>
+    </div>
+    </div>
   );
 }
 
